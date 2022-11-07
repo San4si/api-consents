@@ -12,3 +12,10 @@ GET - http://localhost:4000/consent - retorna a lista de consentimentos  <br/>
 GET - http://localhost:4000/consent/12  - retorna um consentimento por id  <br/>
 POST - http://localhost:4000/consent - Cria um consentimento <br/>
 DELETE - http://localhost:4000/consent/12 - Deleta um consentimento por id <br/>
+
+Implementação em andamento 
+timestamp - campos de datatime
+Autenticações
+
+
+
