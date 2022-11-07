@@ -7,7 +7,7 @@ Banco de dados postgree
 
 Endpoints
 
-GET - http://localhost:4000/ping - testa retornando um pong <br/>
+GET - http://localhost:4000/ping - testa enviando um ping e retornando um pong <br/>
 GET - http://localhost:4000/consent - retorna a lista de consentimentos  <br/>
 GET - http://localhost:4000/consent/12  - retorna um consentimento por id  <br/>
 POST - http://localhost:4000/consent - Cria um consentimento <br/>
