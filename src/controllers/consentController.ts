@@ -2,8 +2,8 @@ import { Request, Response } from 'express';
 import {Consent} from '../models/Consent';
 
 export const getlist = async (req: Request, res: Response) => {
-    let date = await Consent.findAll();
-    res.json({date});
+    let data = await Consent.findAll();
+    res.json({data});
 }
 
 export const getConsent = async (req: Request, res: Response) => {

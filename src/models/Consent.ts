@@ -1,12 +1,13 @@
-import { Model, DataTypes } from 'sequelize';
+import { Model,fn, DataTypes } from 'sequelize';
 import { sequelize } from '../instances/pg';
+import moment from "moment";
 
 export interface ConsentInstance extends Model {
     id: number;
     creationdatetime: string;
-    status: [string];
+    status: string;
     statusupdatedatetime: string;
-    permissions: [string] ;
+    permissions: string[];
     expirationdatetime: string;
     transactionfromdatetime: string;
     transactiontodatetime: string;
@@ -19,7 +20,8 @@ export const Consent = sequelize.define<ConsentInstance>('Consent', {
         type: DataTypes.INTEGER
     },
     creationdatetime: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        defaultValue: moment().format('YYYY-MM-DD hh:mm:ss')
     },
     status: {
         type: DataTypes.STRING
