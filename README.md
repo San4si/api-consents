@@ -1,8 +1,5 @@
 # api-consents
 
-Ao baixar o projeto do github deve rodar comando
-npm install
-
 Banco de dados postgree
 
 Endpoints
@@ -16,6 +13,15 @@ DELETE - http://localhost:4000/consent/12 - Deleta um consentimento por id <br/>
 <b>Implementação em andamento<b/> <br/>
 timestamp - campos de datatime<br/>
 Autenticações<br/>
+
+### Pré-requisitos globais<br/>
+`npm i -g nodemon typescript ts-node`<br/>
+<br/>
+### Instalação<br/>
+`npm install`<br/>
+<br/>
+### Para rodar o projeto <br/>
+`npm run start-dev` 
 
 
 
